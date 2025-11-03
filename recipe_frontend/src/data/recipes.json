@@ -1,0 +1,119 @@
+[
+  {
+    "id": "1",
+    "title": "Lemon Herb Grilled Chicken",
+    "image": "https://images.unsplash.com/photo-1551183053-bf91a1d81141?q=80&w=1200&auto=format&fit=crop",
+    "tags": ["grill", "chicken", "summer"],
+    "prepTime": 25,
+    "rating": 4.6,
+    "cuisine": "American",
+    "description": "Bright and zesty grilled chicken with fresh herbs.",
+    "ingredients": [
+      "2 chicken breasts",
+      "1 lemon (juice and zest)",
+      "2 tbsp olive oil",
+      "2 cloves garlic, minced",
+      "1 tsp dried oregano",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Combine lemon juice, zest, olive oil, garlic, oregano, salt and pepper.",
+      "Marinate chicken for 15 minutes.",
+      "Preheat grill to medium-high heat.",
+      "Grill chicken 5-6 minutes per side until cooked through.",
+      "Rest for 5 minutes before serving."
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Creamy Mushroom Pasta",
+    "image": "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1200&auto=format&fit=crop",
+    "tags": ["pasta", "vegetarian", "comfort"],
+    "prepTime": 30,
+    "rating": 4.8,
+    "cuisine": "Italian",
+    "description": "Silky pasta tossed in a rich mushroom cream sauce.",
+    "ingredients": [
+      "200g fettuccine",
+      "200g mushrooms, sliced",
+      "2 tbsp butter",
+      "2 cloves garlic, minced",
+      "200ml cream",
+      "Parmesan, salt and pepper"
+    ],
+    "steps": [
+      "Cook pasta until al dente.",
+      "Sauté mushrooms in butter until browned.",
+      "Add garlic and cook briefly.",
+      "Pour in cream and simmer until slightly thickened.",
+      "Toss with pasta and parmesan; season to taste."
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Avocado Toast Deluxe",
+    "image": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop",
+    "tags": ["breakfast", "quick", "healthy"],
+    "prepTime": 10,
+    "rating": 4.3,
+    "cuisine": "Fusion",
+    "description": "Crispy toast topped with smashed avocado and extras.",
+    "ingredients": [
+      "2 slices sourdough",
+      "1 ripe avocado",
+      "Chili flakes",
+      "Lemon juice",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Toast bread to your liking.",
+      "Mash avocado with lemon, salt, and pepper.",
+      "Spread on toast, top with chili flakes."
+    ]
+  },
+  {
+    "id": "4",
+    "title": "Teriyaki Salmon Bowl",
+    "image": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1200&auto=format&fit=crop",
+    "tags": ["salmon", "bowl", "gluten-free"],
+    "prepTime": 35,
+    "rating": 4.7,
+    "cuisine": "Japanese",
+    "description": "Glazed salmon served over rice with veggies.",
+    "ingredients": [
+      "2 salmon fillets",
+      "Cooked rice",
+      "Soy sauce, mirin, sugar",
+      "Broccoli florets",
+      "Sesame seeds"
+    ],
+    "steps": [
+      "Whisk soy, mirin, and sugar to make teriyaki.",
+      "Pan-sear salmon; pour sauce and reduce.",
+      "Steam broccoli.",
+      "Serve salmon over rice with broccoli and sesame."
+    ]
+  },
+  {
+    "id": "5",
+    "title": "Mediterranean Salad",
+    "image": "https://images.unsplash.com/photo-1540420773420-3366772f4999?q=80&w=1200&auto=format&fit=crop",
+    "tags": ["salad", "fresh", "vegetarian"],
+    "prepTime": 15,
+    "rating": 4.2,
+    "cuisine": "Mediterranean",
+    "description": "Crisp veggies with olives and feta in lemon dressing.",
+    "ingredients": [
+      "Cucumber, tomatoes, red onion",
+      "Kalamata olives",
+      "Feta cheese",
+      "Olive oil, lemon juice, oregano",
+      "Salt and pepper"
+    ],
+    "steps": [
+      "Chop vegetables and olives.",
+      "Whisk dressing ingredients.",
+      "Toss with feta and serve chilled."
+    ]
+  }
+]

@@ -5,11 +5,16 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run prebuild:fix && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "build:tizen": "vite build",
-    "package:tizen": "cd dist && zip -r ../app.wgt * ../config.xml"
+    "package:tizen": "cd dist && zip -r ../app.wgt * ../config.xml",
+    "postinstall": "node -e \"try{const fs=require('fs');const p=require('./package-lock.json');if(p && p.packages && p.packages['node_modules/vite'] && !String(p.packages['node_modules/vite'].version).startsWith('5.')){console.log('Forcing reinstall due to vite version');process.exit(1)} }catch(e){ }\" || (rm -rf node_modules package-lock.json && npm install)",
+    "prebuild:fix": "node -e \"try{const p=require('./package-lock.json');if(p && p.packages && p.packages['node_modules/vite'] && !String(p.packages['node_modules/vite'].version).startsWith('5.')){process.exit(1)} }catch(e){process.exit(0)}\" || (echo 'Resetting to Vite 5.x' && rm -rf node_modules package-lock.json && npm install)"
+  },
+  "engines": {
+    "node": ">=18 <20 || >=20"
   },
   "dependencies": {
     "react": "^19.1.1",
@@ -19,11 +24,20 @@
     "@eslint/js": "^9.36.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
-    "@vitejs/plugin-react": "^5.0.4",
+    "@vitejs/plugin-react": "4.2.1",
     "eslint": "^9.36.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.22",
     "globals": "^16.4.0",
-    "vite": "^7.1.7"
-  }
+    "vite": "5.4.10"
+  },
+  "overrides": {
+    "vite": "5.4.10",
+    "@vitejs/plugin-react": "4.2.1"
+  },
+  "browserslist": [
+    "defaults",
+    "not ie <= 11",
+    "maintained node versions"
+  ]
 }

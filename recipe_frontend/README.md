@@ -1,16 +1,11 @@
-# React + Vite
+# Recipe Frontend - Tizen Web (Vite 5 / Node 18 compatible)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This app is a modern, responsive SPA for browsing recipes using the Ocean Professional theme.
 
-Currently, two official plugins are available:
+- Dev server: npm run dev (Vite, port 3000)
+- Build: npm run build
+- Tizen package: npm run package:tizen
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Notes:
+- The project is pinned to Vite 5.x to support Node 18 environments. A npm-shrinkwrap.json is included to ensure correct versions in CI.
+- If you encounter engine errors about Node >=20, remove node_modules and reinstall to ensure Vite 5 is used.

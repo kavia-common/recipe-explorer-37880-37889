@@ -2,16 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=1920, height=1080" />
-    <meta name="description" content="Tizen TV Application" />
+    <!-- Use responsive viewport; Tizen preview often runs at 1920x1080 but we allow scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Recipe Explorer - Tizen Web App" />
     <link rel="icon" type="image/png" href="/icon.png" />
     <title>recipe_frontend</title>
     <style>
-      body {
+      html, body, #root {
         margin: 0;
         padding: 0;
-        width: 1920px;
-        height: 1080px;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
       }
     </style>
